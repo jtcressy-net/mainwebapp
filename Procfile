@@ -1,1 +1,1 @@
-web: python3 manage.py runserver 0.0.0.0:$PORT
+web: bin/start-nginx newrelic-admin run-program gunicorn -c gunicorn.conf mainwebapp.wsgi:application
