@@ -1,20 +1,22 @@
 {
   "name": "app.jtcressy.net",
-  "scripts": {},
-  "env": {},
-  "formation": {
-
+  "description": "Dummy web app for learning django, react, and heroku",
+  "repository": "https://github.com/jtcressy/mainwebapp",
+  "website": "https://jtcressy.net",
+  "keywords": [
+    "logging",
+    "error"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "A secret key for a particular Django installation. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value.",
+      "generator": "secret"
+    },
   },
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-multi.git"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python.git"
-    }
-  ]
+  "scripts": {
+    "postdeploy": "echo 'postdeploy'"
+  }
 }
-
