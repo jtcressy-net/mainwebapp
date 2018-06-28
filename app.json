@@ -1,0 +1,20 @@
+{
+  "name": "app.jtcressy.net",
+  "scripts": {},
+  "env": {},
+  "formation": {
+
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-multi.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    }
+  ]
+}
+
