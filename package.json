@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-//    "postinstall": "cd static && npm install",
-//    "build": "cd static && npm run build:prod"
+    "postinstall": "cd static && echo 'npm install'",
+    "build": "cd static && echo 'npm run build:prod'"
   },
   "cacheDirectories": [
     "static/node_modules"
